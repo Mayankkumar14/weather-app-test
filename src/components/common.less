@@ -1,0 +1,156 @@
+@import (less) "../styles/variables.less";
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.weather-container {
+  margin-top: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bottom-card-container {
+  width: calc(100% + 8px) !important;
+  margin-left: -8px !important;
+  margin-top: 0 !important;
+}
+
+.bottom-card-container .bottom-card .card-container {
+  width: 100% !important;
+  background-color: @bg-color !important;
+  border-radius: 0 0 6px 6px !important;
+  box-shadow: none !important;
+  padding: 20px 0 !important;
+}
+
+.bottom-card-container .bottom-card .card-container .MuiTypography-root {
+  margin-bottom: 0 !important;
+}
+
+.top-card-container .top-card .card-container .MuiTypography-root,
+.bottom-card-container .bottom-card .card-container .MuiTypography-root {
+  color: @grey-color !important;
+}
+
+.top-card-container .top-card .card-container .MuiTypography-root.number-text,
+.bottom-card-container .bottom-card .card-container .MuiTypography-root.number-text {
+  color: @dark-grey-color !important;
+}
+
+.number-text {
+  margin-bottom: 0px !important;
+}
+
+.card-container {
+  width: calc(100% - 30px);
+  max-width: 600px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 15%) !important;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: auto;
+}
+
+.header-button {
+  margin: 10px !important;
+  font-size: 100% !important;
+  color: black !important;  
+  padding: 10px !important;
+}
+
+.top-card-container {
+  width: calc(100% + 8px) !important;
+  margin-left: -8px !important;
+}
+
+.top-card-container .top-card {
+  margin-top: 0 !important;
+}
+
+.top-card-container .top-card .card-container {
+  width: 100% !important;
+  background-color: @bg-color !important;
+  border-radius: 6px 6px 0 0 !important;
+  box-shadow: none !important;
+  padding: 20px 0 !important;
+}
+
+.top-card-container .top-card .card-container .title-text {
+  position: relative;
+}
+
+.top-cloud-icon {
+  color: @cloud-color;
+  height: 114px;
+  margin-right: 15px;
+}
+
+.top-sun-icon {
+  color: @sun-color;
+  height: 122px;
+}
+
+.bottom-cloud-icon {
+  color: @cloud-color;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.weather-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-text {
+  margin-bottom: 0px !important;
+}
+
+.bottom-card {
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-0 {
+  padding: 0px !important;
+}
+
+.refresh-icon {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  transform: translateY(-60%);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+.fa-sun {
+  color: @sun-color;
+}
+
+.rotateIcon {
+  animation: spin 2s linear infinite;
+  top: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
